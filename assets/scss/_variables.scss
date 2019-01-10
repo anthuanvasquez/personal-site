@@ -1,0 +1,27 @@
+$color__primary:    #493AFC;
+$color__font:       #E5E8FE;
+$color__font-dark:  #C9CDEE;
+
+// Background / Border / Shadow
+
+$color__background: #1A1B30; // #100e16;
+$color__box:        darken($color__background, 1%);
+$color__border:     lighten($color__background, 5%);
+$color__border-box: #8697AE;
+$color__shadow:     #000000;
+$color__icon:       #8697AE;
+
+// Gradients
+
+$color__linear-1:   #493AFC; // #ff8a00;
+$color__linear-2:   #F353AF; // #da1b60;
+$color__radial-1:   darken($color__background, 5%);
+$color__radial-2:   $color__background;
+$color__radial-3:   #17141d;
+
+$spacing:           1rem;
+$speed:             1700ms;
+$font-size:         16px;
+
+$font__logo:        'Charmonman', cursive;
+$font__body:        'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
