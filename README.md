@@ -1,6 +1,6 @@
-# anthuan-website
+# Personal Site
 
-> My mathematical Nuxt.js project
+> Personal prtfolio site based on Nuxt.js
 
 ## Build Setup
 
