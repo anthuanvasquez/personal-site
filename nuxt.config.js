@@ -3,7 +3,7 @@ require('dotenv').config()
 const client = require('./plugins/contentful')
 
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
 
   /*
   ** Headers of the page
@@ -14,12 +14,19 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: 'Front End, Developer, Web Developer, JavaScript Developer, Web Apps' },
+      { name: 'msapplication-TileColor', content: '#da532c' },
+      { name: 'theme-color', content: '#ffffff' },
       { hid: 'description', name: 'description', content: 'A Front End Developer' }
     ],
     link: [
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'manifest', href: '/site.webmanifest' },
+      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Charmonman:400,700' },
-      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.3/css/all.css' },
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.3/css/all.css' }
     ]
   },
 
@@ -33,26 +40,6 @@ module.exports = {
   */
   css: [
     'animate.css'
-  ],
-
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-    '~/plugins/contentful'
-  ],
-
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios',
-    // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
-    '@nuxtjs/dotenv',
-    '@nuxtjs/markdownit',
-    ['nuxt-sass-resources-loader', '@/assets/scss/_variables.scss'],
   ],
   /*
   ** Axios module configuration
@@ -82,8 +69,29 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
   },
+
+  /*
+  ** Plugins to load before mounting the App
+  */
+  plugins: [
+    './plugins/contentful'
+  ],
+
+  /*
+  ** Nuxt.js modules
+  */
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/bulma',
+    '@nuxtjs/dotenv',
+    '@nuxtjs/markdownit',
+    [
+      'nuxt-sass-resources-loader',
+      '@/assets/scss/_variables.scss'
+    ],
+  ],
 
   markdownit: {
     injected: true
@@ -92,7 +100,7 @@ module.exports = {
   generate: {
     routes () {
       return client.getEntries({
-        content_type: 'post'
+        content_type: process.env.CTF_BLOG_POST_TYPE_ID
       }).then(entries => {
         return entries.items.map(entry => {
           return {
