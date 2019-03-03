@@ -1,6 +1,6 @@
 # Personal Site
 
-> Personal prtfolio site based on Nuxt.js
+> Personal site based on Nuxt.js
 
 ## Build Setup
 
