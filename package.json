@@ -1,6 +1,6 @@
 {
   "name": "anthuan-personal-site",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Personal Site",
   "author": "Anthuan Vasquez",
   "private": true,
@@ -17,6 +17,7 @@
     "@nuxtjs/bulma": "^1.2.0",
     "@nuxtjs/dotenv": "^1.3.0",
     "@nuxtjs/markdownit": "^1.2.3",
+    "@nuxtjs/style-resources": "^1.0.0",
     "animate.css": "^3.7.0",
     "contentful": "^7.0.6",
     "cross-env": "^5.2.0",
@@ -30,10 +31,10 @@
     "eslint": "^5.0.1",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-vue": "^4.0.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.0",
     "nodemon": "^1.11.0",
     "postcss": "^7.0.7",
     "postcss-preset-env": "^6.5.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^8.0.0"
   }
 }

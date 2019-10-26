@@ -23,7 +23,7 @@
         </div>
         <div class="control">
           <div class="tags has-addons">
-            <span class="tag is-large">JavaScript</span>
+            <span class="tag is-large">JavaScript (ES6+)</span>
             <span class="tag is-large">9</span>
           </div>
         </div>
@@ -36,13 +36,13 @@
         <div class="control">
           <div class="tags has-addons">
             <span class="tag is-large">Vue.js</span>
-            <span class="tag is-large">6</span>
+            <span class="tag is-large">8</span>
           </div>
         </div>
         <div class="control">
           <div class="tags has-addons">
             <span class="tag is-large">Node.js</span>
-            <span class="tag is-large">5</span>
+            <span class="tag is-large">7</span>
           </div>
         </div>
         <div class="control">
@@ -78,7 +78,7 @@
         <div class="control">
           <div class="tags has-addons">
             <span class="tag is-large">UI/UX</span>
-            <span class="tag is-large">7</span>
+            <span class="tag is-large">8</span>
           </div>
         </div>
       </div>

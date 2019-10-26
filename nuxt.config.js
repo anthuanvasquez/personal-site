@@ -39,7 +39,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'animate.css'
+    'animate.css',
+    '@/assets/scss/app.scss'
   ],
   /*
   ** Axios module configuration
@@ -54,7 +55,7 @@ module.exports = {
   build: {
     postcss: [
       require('autoprefixer')({
-        browsers: ['last 5 versions']
+        browsers: ['last 2 versions']
       })
     ],
     /*
@@ -87,11 +88,14 @@ module.exports = {
     '@nuxtjs/bulma',
     '@nuxtjs/dotenv',
     '@nuxtjs/markdownit',
-    [
-      'nuxt-sass-resources-loader',
-      '@/assets/scss/_variables.scss'
-    ],
+    '@nuxtjs/style-resources'
   ],
+
+  styleResources: {
+    scss: [
+      'assets/scss/_variables.scss'
+    ]
+  },
 
   markdownit: {
     injected: true

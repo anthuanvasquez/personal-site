@@ -84,25 +84,9 @@
         <p class="content has-text-centered is-medium">
           Join my monthly newsletter for valuable information including useful recommendations, updates on new work, articles, gear, and people.
         </p>
-        <form action="#">
-          <div class="field has-addons">
-            <p class="control has-icons-left is-expanded">
-              <input
-                class="input is-large"
-                type="text"
-                placeholder="Your email"
-              >
-              <span class="icon is-medium is-left">
-                <i class="fas fa-envelope fa-lg" />
-              </span>
-            </p>
-            <p class="control">
-              <a class="button is-static is-large">
-                Subscribe
-              </a>
-            </p>
-          </div>
-        </form>
+
+        <footer-sign-up-form />
+
       </div>
       <div class="columns">
         <div class="column">
@@ -121,7 +105,7 @@
           <div class="box last">
             <h3 class="title is-5">Get in touch.</h3>
             <p>
-              If you have any questions feel free to reach out at <a href="mailtto:me@anthuanvasquez.net"><i class="fas fa-envelope" /> me@anthuanvasquez.net</a>. I'm excited for our session and to meet you!.
+              If you have any questions feel free to reach out at <a href="mailto:me@anthuanvasquez.net"><i class="fas fa-envelope" /> me@anthuanvasquez.net</a>. I'm excited for our session and to meet you!.
             </p>
           </div>
         </div>
@@ -140,6 +124,17 @@
     </div>
   </footer>
 </template>
+
+<script>
+  import FooterSignUpForm from '@/components/FooterSignUpForm.vue'
+
+  export default {
+    name: 'FooterComponent',
+    components: {
+      FooterSignUpForm
+    }
+  }
+</script>
 
 <style lang="scss">
   .footer {

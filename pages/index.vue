@@ -23,33 +23,59 @@
             </p>
             <h3 class="title is-3">I'm Currently.</h3>
             <p>
-              Working as a Front End Web Developer with a great <a href="https://justjoin.it/brands/story/snow-dog">team</a> at <a href="https://snow.dog">SNOW.DOG</a>.
+              Working as a Freelance Front End Web Developer.
             </p>
             <p>
-              Collaborating on <a href="https://www.vuestorefront.io/">Vue Storefront</a> and anothers <a href="https://github.com/anthuanvasquez">open-source</a> projects.
+              Collaborating on some <a href="https://github.com/anthuanvasquez">open-source</a> projects.
             </p>
             <p>
-              Producing music as <a href="">Oido Perfecto</a>.
+              Producing music as <a href="https://oidoperfecto.net">Oido Perfecto</a>.
             </p>
             <p>
               Building my personal brand :).
             </p>
             <p>
-              Reading <a href="https://github.com/getify/You-Dont-Know-JS">You Don't JS</a> Series and <a href="http://shop.oreilly.com/product/9780596517748.do">JavaScript: The Good Parts</a> books.
+              Reading <a href="https://github.com/getify/You-Dont-Know-JS">You Don't JS</a> Series, <a href="http://shop.oreilly.com/product/9780596517748.do">JavaScript: The Good Parts</a>, <a href="https://www.the1thing.com/">The One Thing</a>, <a href="https://www.amazon.com/Elon-Musk-SpaceX-Fantastic-Future-ebook/dp/B00KVI76ZS">Elon Musk</a> books.
             </p>
             <p>
-              Fan of Dragon Ball Super :)
+              Fan of Dragon Ball Z, Super :)
             </p>
             <p>
               Being a father.
             </p>
             <p>
-              Learnong new things.
+              Learning new things.
             </p>
           </div>
         </div>
       </section>
       <section-services />
+
+      <section class="hero hero-quote">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns">
+              <div class="column is-two-thirds">
+                <h1 class="title">
+                  Would you like to Build your Website with Us?
+                </h1>
+                <h2 class="subtitle">
+                  We Create High Quality Websites
+                </h2>
+              </div>
+              <div class="column">
+                <a
+                  class="button is-large"
+                  href="https://forms.gle/QziNYcWx1A7WNY4D9"
+                >
+                  Enquire Here
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section-skills />
       <section-workflow />
     </div>
@@ -72,7 +98,7 @@
 
     data() {
       return {
-        age: 31,
+        age: 32,
         bornAge: 1987,
         yearsOfExperience: 9,
         initYear: 2010
@@ -95,50 +121,11 @@
 </script>
 
 <style lang="scss">
-  .section-bio {
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      background-image:
-        radial-gradient(
-          ellipse closest-side,
-          rgba($color__radial-1, 0.75),
-          $color__radial-2
-        ),
-        url('/me.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      opacity: 0.75;
-    }
-
-    .title {
-      color: $color__font;
-    }
-
-    .content {
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-    }
-
-    a {
-      font-weight: 700;
-
-      &:hover {
-        color: $color__font;
-      }
-    }
-  }
-
-  .section {
-    border-bottom: 1px solid $color__border;
-    margin: 0;
+  .hero-quote {
+    background: linear-gradient(
+      to right,
+      $color__linear-1,
+      $color__linear-2
+    );
   }
 </style>

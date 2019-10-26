@@ -82,20 +82,6 @@
           </div>
         </div>
       </div>
-      <div class="content has-text-centered">
-        <h3 class="subtitle is-3">
-          Like Our Services? Get an
-          <a
-            class="button is-primary is-inverted is-outlined is-large"
-            href="/"
-          >
-            <span class="icon is-small">
-              <i class="fa fa-file-invoice-dollar" />
-            </span>
-            <span>INSTANT QUOTE</span>
-          </a>
-        </h3>
-      </div>
     </div>
   </section>
 </template>

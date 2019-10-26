@@ -29,9 +29,9 @@
                 Based in MC, <span itemprop="addressLocality">Dominican Republic</span>.
               </p>
               <p class="job-text">
-                Currently working on
+                Currently working as
               </p>
-              <logo-brand />
+              Freelance: Front End Web Developer
             </div>
           </div>
         </section>

@@ -57,12 +57,6 @@
     position: relative;
   }
 
-  #header:not(.header-sticky) {
-    .navbar {
-      top: 64px;
-    }
-  }
-
   .content h1,
   .content h2,
   .content h3,

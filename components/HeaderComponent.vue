@@ -1,8 +1,5 @@
 <template>
   <header id="header">
-    <div class="notification is-warning has-text-centered is-marginless">
-      Site is still under <strong>development</strong>.
-    </div>
     <nav
       class="navbar is-transparent is-fixed-top"
       role="navigation"
@@ -22,28 +19,17 @@
             <span class="icon"><i class="fa fa-home" /></span> Home
           </a>
           <a
-            class="navbar-item navbar-item--life"
-            href="/life"
-          >
-            <span class="icon"><i class="fa fa-pen-alt" /></span> Life
-          </a>
-          <a
-            class="navbar-item navbar-item--work"
-            href="/work"
-          >
-            <span class="icon"><i class="fa fa-magic" /></span> Work
-          </a>
-          <a
             class="navbar-item navbar-item--music"
-            href="/music"
+            href="https://oidoperfecto.net"
+            target="_blank"
           >
             <span class="icon"><i class="fa fa-music" /></span> Music
           </a>
           <a
-            class="navbar-item navbar-item--contact"
-            href="/contact"
+            class="navbar-item"
+            href="mailto:me@anthuanvasquez.net"
           >
-            <span class="icon"><i class="fa fa-at" /></span> Get In Touch
+            <span class="icon"><i class="fas fa-envelope" /></span> Get In Touch
           </a>
         </div>
       </div>

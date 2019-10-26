@@ -70,7 +70,7 @@
 
     data() {
       return {
-        name: 'Work Process'
+        name: 'Process'
       }
     }
   }
