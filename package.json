@@ -21,7 +21,7 @@
     "animate.css": "^3.7.0",
     "contentful": "^7.0.6",
     "cross-env": "^5.2.0",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "nuxt": "^2.0.0",
     "nuxt-sass-resources-loader": "^2.0.5"
   },
